@@ -85,7 +85,6 @@ export default function Skills() {
         </Row> 
         </div>
       </Container>
-      <img className="background-image-left" src="" alt="image"/>
     </section>
   )
 }
