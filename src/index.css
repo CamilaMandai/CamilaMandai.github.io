@@ -358,8 +358,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.5em;
 }
 
-#highlight {
-  color: rgb(170, 54, 124)
+.highlight, .highlight a {
+  color: rgb(170, 54, 124);
+  font-weight: 700;
+  text-decoration: none;
+
+}
+
+.highlight a:hover {
+  color: rgb(204, 96, 161);
+  text-decoration: underline;
 }
 
 .skill-slider {
@@ -392,6 +400,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .tech-list {
   display: flex;
+  padding: 0;
 }
 
 .tech-list div {
@@ -402,13 +411,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .tech-list li {
   font-family: 'Courier New', Courier, monospace;
   color:#a19e9e;
-  list-style-type: square;
-}
-
-.backgorund-image-left {
-  top: 28%;
-  position: absolute;
-  bottom: 0;
-  width: 40%;
-  z-index: -4;
+  list-style-type: none;
+  line-height: 2;
 }

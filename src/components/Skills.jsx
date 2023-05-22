@@ -30,26 +30,28 @@ export default function Skills() {
         <h2>Sobre Mim</h2>
         <Row>
           <Col>
-             <p>Eu gosto de criar coisas que vagam pela internet. Sou bióloga de formação e desde que me conheço a programação me persegue. Meu interesse em desenvolvimento web, mais especificamente, começou quando eu quis fazer o site da empresa de atividades ao ar livre do meu companheiro. Não deu tempo de fazer o projeto na época, mas eu quis continuar estudando só por diversão! </p>
-              <p id="highlight">Em 2022, decidi entrar na Trybe e conhecer um pouco mais sobre como é mercado de trabalho na área de tecnologia</p>
-              <p>Atualmente, tenho trabalhado em projetos full stack utilizando as mais diversas e recentes tecnologias. Não me vejo atuando em outra área.</p>
+             <p>Eu gosto de criar coisas que vagam pela internet. Sou bióloga de formação e desde que me conheço a programação me persegue. Em desenvolvimento web, especificamente, meu interesse surgiu quando quis fazer o site da empresa de atividades ao ar livre do meu companheiro. Não deu tempo de fazer o projeto na época, mas foi o suficiente para eu querer continuar estudando, só pela diversão! </p>
+              <p><span className="highlight">Já em 2022, decidi entrar na <a href="https://www.betrybe.com/">Trybe</a> e conhecer um pouco mais sobre como é mercado de trabalho na área de tecnologia.</span></p>
+              <p>Atualmente, tenho trabalhado em projetos <span className="highlight">Full Stack</span> utilizando as mais diversas e recentes tecnologias. Não me vejo atuando em outra área.</p>
               <p>Algumas tecnologias que tenho utilizado:</p>
               <ul className="tech-list">
                 <div>
-                  <li>JavaScript</li>
-                  <li>React</li>
-                  <li>Bootstrap</li>
-                  <li>Node.js</li>
-                  <li>Express</li>
-                  <li>MySQL</li>
+                  <li>&gt; JavaScript</li>
+                  <li>&gt; React</li>
+                  <li>&gt; Bootstrap</li>
+                  <li>&gt; Node.js</li>
                 </div>
                 <div>
-                  <li>Sequelize</li>
-                  <li>Mongodb</li>
-                  <li>Mongoose</li>
-                  <li>Docker</li>
-                  <li>TypeScript</li>
-                  <li>Python</li>
+                  <li>&gt; Express</li>
+                  <li>&gt; MySQL</li>
+                  <li>&gt; Sequelize</li>
+                  <li>&gt; Mongodb</li>
+                </div>
+                <div>
+                  <li>&gt; Mongoose</li>
+                  <li>&gt; Docker</li>
+                  <li>&gt; TypeScript</li>
+                  <li>&gt; Python</li>
                 </div>
               </ul>
               {/* <Carousel responsive={responsive} infinite={true} className="skill-slider">
