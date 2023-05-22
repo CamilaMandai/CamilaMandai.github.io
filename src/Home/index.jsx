@@ -1,15 +1,15 @@
 import NavigationBar from '../components/NavigationBar';
 import Banner from '../components/Banner';
+import Skills from '../components/Skills';
 
 function Home() {
   return (
     <div>
       <NavigationBar />
       <Banner />
+      <Skills />
     </div>
   )
 }
-
-Home.propTypes = {}
 
 export default Home

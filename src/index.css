@@ -327,3 +327,88 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 
+/* Skills */
+
+.skill {
+  position: relative;
+}
+
+.skill-bx {
+  background: #151515;
+  border-radius: 64px;
+  text-align: left;
+  padding: 60px 80px 0 80px;
+  margin-top: -60px;
+}
+
+.skill h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color:#fff;
+  margin-bottom: 30px;
+}
+
+.skill p {
+  /* color:  rgb(74, 47, 189); */
+  /* color:rgb(170, 54, 124); */
+  width: 90%  ;
+  color: #a19e9e;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+}
+
+#highlight {
+  color: rgb(170, 54, 124)
+}
+
+.skill-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.skill-img {
+  text-align: left;
+}
+
+.skill-img img{
+  width: 50%;
+  margin-left: 20px;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.square {
+  border: 2px solid rgb(170, 54, 124);
+  width: 50%;
+  height: 290px;
+  border-radius: 50%;
+  position: relative;
+  top: -280px;
+  left: 28px;
+  z-index: 1;
+}
+
+.tech-list {
+  display: flex;
+}
+
+.tech-list div {
+  padding: 0 40px 0 0;
+  margin: 0;
+}
+
+.tech-list li {
+  font-family: 'Courier New', Courier, monospace;
+  color:#a19e9e;
+  list-style-type: square;
+}
+
+.backgorund-image-left {
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
+}

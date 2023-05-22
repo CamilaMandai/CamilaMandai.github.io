@@ -36,7 +36,7 @@ function NavigationBar() {
               href="#skills"
               onClick={() => setActiveLink('skills')}
               >
-                Habilidades
+                Sobre
             </Nav.Link>
             <Nav.Link 
               className={ activeLink === 'projects' ? 'active navbar-link' : 'navbar-link' }
