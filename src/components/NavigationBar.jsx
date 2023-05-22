@@ -16,9 +16,9 @@ function NavigationBar() {
   return (
     <Navbar className={scrolled && "scrolled"} expand="lg">
       <Container>
-        <Navbar.Brand href="#home">
+        {/* <Navbar.Brand href="#home">
           <span>Camila Mandai</span>
-        </Navbar.Brand>
+        </Navbar.Brand> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toogle-icon"></span>
         </Navbar.Toggle>
