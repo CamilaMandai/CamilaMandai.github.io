@@ -12,7 +12,7 @@ export default function Form() {
 
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState("Enviar");
-  const [status, setStatus] = useState({});
+  const [status, setStatus] = useState({message:''});
 
   const inputHandler = ({target}) => {
     const {name, value} = target;
@@ -36,9 +36,9 @@ export default function Form() {
     let result = response.json();
     setFormDetails(formInitialDetails);
     if(result.code === 200){
-      setStatus({success:true, message: 'Mensagem enviada com sucesso'});
+      setStatus({success: true, message: result.message });
     } else {
-      setStatus({success: false, message: 'Ocorreu um erro, por favor tente novamente mais tarde'});
+      setStatus({success: false, message: result.message});
     }
   }
   return (
@@ -62,10 +62,10 @@ export default function Form() {
                   <input type="email" value={formDetails.email}  placeholder="Email" name="email" onChange={inputHandler}/>
                   </Col>
                 <Col sm="6" className="px-1">
-                  <input type="phone" value={formDetails.email}  placeholder="Telefone" name="phone" onChange={inputHandler}/>
+                  <input type="phone" value={formDetails.phone}  placeholder="Telefone" name="phone" onChange={inputHandler}/>
                   </Col>
                 <Col sm="6" className="px-1">
-                  <textarea row="6" value={formDetails.message} placeholder="Escreva sua mensagem" name="message" onChange={inputHandler}/>
+                  <textarea rows="6" value={formDetails.message} placeholder="Escreva sua mensagem" name="message" onChange={inputHandler}/>
                   <button type="submit">{buttonText}</button>
                 </Col>
                 {
