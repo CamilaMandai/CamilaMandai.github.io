@@ -1,7 +1,8 @@
 import { Container, Row, Col } from "react-bootstrap";
 // import Carousel from 'react-multi-carousel';
 // import 'react-multi-carousel/lib/styles.css';
-import myPic from '../assets/minhaFoto.png';
+// import myPic from '../assets/minhaFoto.png';
+import myPic from '../assets/minha.jpeg';
 
 export default function Skills() {
   // const responsive = {

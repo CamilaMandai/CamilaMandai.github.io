@@ -43,7 +43,7 @@ export default function Banner() {
             <span className="tagline">Olá</span>
             <h1>Sou Camila Mandai <span className="wrap">{text}<span className="blinking-cursor">|</span></span></h1>
             <p>Este é o meu portifólio, fique à vontade para explorar o meu mundo</p>
-            <button onClick={() => console.log("connect")}>Vamos conectar? <ArrowRightCircle size={25} /></button>
+            <a href="#contact"><button>Vamos conectar? <ArrowRightCircle size={25} /></button></a>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <img src={bannerImage} alt="Imagem do banner" />

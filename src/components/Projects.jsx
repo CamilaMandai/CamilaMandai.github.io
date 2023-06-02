@@ -1,13 +1,43 @@
 import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
+import ecommerce from '../assets/ecommerce.png';
+import todoapp from '../assets/todoapp.png';
+import tangara from '../assets/tangara.png';
+import itunes from '../assets/itunesClone.png';
+import deliveryApp from '../assets/deliveryApp.png'
 
 export default function Projects() {
   const projects = [
     {
-      title:"Star Wars",
+      title:"Ecommerce",
       description: "An Star Wars planets app",
-      imgUrl: "",
-    }
+      imgUrl: ecommerce,
+      githubLink: '',
+    },
+    {
+      title:"Todo List App",
+      description: "An Star Wars planets app",
+      imgUrl: todoapp,
+      githubLink: '',
+    },
+    {
+      title:"Blog de Eduardo Tangara",
+      description: "An Star Wars planets app",
+      imgUrl: tangara,
+      githubLink: '',
+    },
+    {
+      title:"Music Player App",
+      description: "An Star Wars planets app",
+      imgUrl: itunes,
+      githubLink: '',
+    },
+    {
+      title:"Delivery App",
+      description: "An Star Wars planets app",
+      imgUrl: deliveryApp,
+      githubLink: '',
+    },
   ]
   return (
     <section className="project" id="project">
@@ -19,7 +49,7 @@ export default function Projects() {
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav variant="pills" defaultActiveKey="/home">
                 <Nav.Item>
-                  <Nav.Link eventKey="first">Tab One</Nav.Link>
+                  <Nav.Link eventKey="first">Página 1</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link eventKey="second">Tab Two</Nav.Link>
@@ -29,7 +59,7 @@ export default function Projects() {
                 </Nav.Item>
               </Nav>
               <Tab.Content>
-                <Tab.Pane eventKey="first">
+                <Tab.Pane eventKey="first"> 
                   <Row>
                     {
                       projects.map((p) => (<ProjectCard key={p.title} {...p}/>))

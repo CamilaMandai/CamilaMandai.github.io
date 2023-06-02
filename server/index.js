@@ -1,6 +1,8 @@
 import express from 'express';
 import cors from 'cors';
 import nodemailer from 'nodemailer';
+import * as dotenv from 'dotenv'
+dotenv.config()
 
 const app = express();
 const router = express.Router();
@@ -8,15 +10,15 @@ const router = express.Router();
 app.use(cors());
 app.use(express.json());
 app.use('/', router);
-app.listen(5000, () => console.log("Server up and running"));
+app.listen(5000, () => console.log("Server up and running", process.env.USER_EMAIL));
 
-router.get('/', (req, res) => res.send('Hello, server on!'))
+router.get('/', (_req, res) => res.send('Hello, server on!'))
 
 const contactEmail = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: '*********@gmail.com',
-    pass: '*******',
+    user: process.env.USER_EMAIL,
+    pass: process.env.PASS,
   },
 });
 
@@ -27,7 +29,7 @@ contactEmail.verify((error) => {
 
 router.post('/contact', (req, res) => {
   const { firstName, lastName, email, phone, message } = req.body; 
-  console.log(firstName)
+  console.log("hello from server")
   const mail = {
     from: `${firstName} ${lastName}`,
     to: '*********@gmail.com',
