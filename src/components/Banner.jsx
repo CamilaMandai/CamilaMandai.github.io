@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { useMediaQuery } from "react-responsive";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import bannerImage from "../assets/banner-image.png";
 
@@ -10,6 +11,8 @@ export default function Banner() {
   const [delta, setDelta] = useState(300-Math.random()*100);
   const toRotate = ["Web Developer", "Full Stack"];
   const period = 2000;
+
+  const isMobile = useMediaQuery({maxWidth: 991})
 
   useEffect(() => {
     const ticker = setInterval(() => tick(), delta);
@@ -45,7 +48,7 @@ export default function Banner() {
             <p>Este é o meu portifólio, fique à vontade para explorar o meu mundo</p>
             <a href="#contact"><button>Vamos conectar? <ArrowRightCircle size={25} /></button></a>
           </Col>
-          <Col xs={12} md={6} xl={5}>
+          <Col className={isMobile && "d-none"} md={6} xl={5}>
             <img src={bannerImage} alt="Imagem do banner" />
           </Col>
         </Row>

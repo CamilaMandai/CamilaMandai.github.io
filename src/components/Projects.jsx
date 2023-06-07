@@ -10,31 +10,31 @@ export default function Projects() {
   const projects = [
     {
       title:"Ecommerce",
-      description: "An Star Wars planets app",
+      description: "Aplicação desenvolvida em React de um ecommerce com tela de produtos disponíveis e carrinho de compras. A aplicação consome dados da API do Mercado Livre",
       imgUrl: ecommerce,
       githubLink: '',
     },
     {
       title:"Todo List App",
-      description: "An Star Wars planets app",
+      description: "Um Todo List desenvolvido em React e backend em Python Django e banco de dados MySQL",
       imgUrl: todoapp,
       githubLink: '',
     },
     {
       title:"Blog de Eduardo Tangara",
-      description: "An Star Wars planets app",
+      description: "Portifolio de um artista com trabalhos disponíveis, blog e página de administrador com autenticação e autorização. Aplicação foi desenvolvida em ejs com banco de dados Mongodb",
       imgUrl: tangara,
       githubLink: '',
     },
     {
       title:"Music Player App",
-      description: "An Star Wars planets app",
+      description: "Aplicativo de música desenvolvido em React com dados consumidos da API do Itunes",
       imgUrl: itunes,
       githubLink: '',
     },
     {
       title:"Delivery App",
-      description: "An Star Wars planets app",
+      description: "Aplicativo de entrega de bebidas com telas de produtos, perfis de usuário e lista de compras. Desenvolvido com React no frontend,  Node.js no backend e banco de dados MySQL.",
       imgUrl: deliveryApp,
       githubLink: '',
     },
@@ -45,9 +45,9 @@ export default function Projects() {
         <Row>
           <Col>
             <h2>Projetos</h2>
-            <p>Alguns projetos que desenvolvi utilizando diferentes abordagens:</p>
+            <p>Alguns exemplos de projetos FullStacks desenvolvidos:</p>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
-              <Nav variant="pills" defaultActiveKey="/home">
+              {/* <Nav variant="pills" defaultActiveKey="/home">
                 <Nav.Item>
                   <Nav.Link eventKey="first">Página 1</Nav.Link>
                 </Nav.Item>
@@ -57,7 +57,7 @@ export default function Projects() {
                 <Nav.Item>
                   <Nav.Link eventKey="third">Tab Three</Nav.Link>
                 </Nav.Item>
-              </Nav>
+              </Nav> */}
               <Tab.Content>
                 <Tab.Pane eventKey="first"> 
                   <Row>

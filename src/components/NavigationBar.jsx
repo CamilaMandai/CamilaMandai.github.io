@@ -1,4 +1,5 @@
 import { Navbar, Container, Nav} from 'react-bootstrap';
+import { useMediaQuery } from 'react-responsive';
 import { useEffect, useState } from 'react';
 import githubLogo from '../assets/github.png';
 import linkedinLogo from '../assets/linkedin.png';
@@ -14,11 +15,21 @@ function NavigationBar() {
     return () => window.removeEventListener("scroll", () => setScrolled(window.scrollY > 50))
 }, [])
 
+  const isSmallScreen = useMediaQuery({ maxWidth: 991 });
+
+  const [menuExpandido, setMenuExpandido] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuExpandido(!menuExpandido);
+  };
+
+  const isExpandedMenuAndSmallScreen = menuExpandido && isSmallScreen
+
   return (
     <Navbar className={scrolled && "scrolled"} collapseOnSelect expand="lg" variant="dark">
       <Container>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={toggleMenu}/>
+        <Navbar.Collapse id="responsive-navbar-nav" className={isExpandedMenuAndSmallScreen && "bg-dark"}>
           <Nav className="me-auto">
           <Nav.Link 
               className={ activeLink === 'home' ? 'active navbar-link' : 'navbar-link' } 
@@ -48,7 +59,7 @@ function NavigationBar() {
                <a href="https://github.com/CamilaMandai" rel="noreferrer" target="_blank"><img src={githubLogo} alt="github icon" /></a>
                <a href="https://www.linkedin.com/in/camila-mandai" rel="noreferrer" target="_blank"><img src={linkedinLogo} alt="linkedin icon" /></a>
              </div>
-             <button className="vvd"><a href='#contact'>Entre em contato</a></button>
+             {!isSmallScreen && (<button><a href='#contact'>Entre em contato</a></button>) }
         </span>
           </Nav>
         </Navbar.Collapse>
