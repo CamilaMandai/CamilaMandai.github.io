@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm } from '@formspree/react';
 import githubLogo from '../assets/github.png';
 import linkedinLogo from '../assets/linkedin.png';
-import resumeIcon from '../assets/cv.png';
+// import resumeIcon from '../assets/cv.png';
 
 export default function Form() {
   const formInitialDetails = {
