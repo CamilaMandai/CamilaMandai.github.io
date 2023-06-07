@@ -301,10 +301,6 @@ nav.navbar img {
   margin-left: 30%;
 }
 
-.banner-presentation {
-  width: 100%;
-}
-
 @media screen and (min-width:991px) {
   .banner-presentation {
     width: 50%;
@@ -484,6 +480,7 @@ nav.navbar img {
 	font-size: 45px;
 	font-weight: 700;
   text-align: center;
+  color:#fff;
 }
 .project p {
   color: #B8B8B8;
@@ -563,7 +560,7 @@ nav.navbar img {
   /* background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%); */
   background: linear-gradient(90.21deg, rgb(23, 73, 113) -5.91%, rgb(70, 234, 190) 111%);
 
-  opacity: 0.85;
+  opacity: 0.95;
   position: absolute;
   width: 100%;
   height: 0;
@@ -583,6 +580,11 @@ nav.navbar img {
   width: 100%;
   padding: 10px;
 }
+.proj-txtx p a {
+  font-weight: bold;
+  color: rgb(247, 243, 11);
+}
+
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
   opacity: 1;

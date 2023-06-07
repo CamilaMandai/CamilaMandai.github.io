@@ -65,7 +65,7 @@ useEffect(() => {
             <div className="social-icon contact-icon">
                <a href="https://github.com/CamilaMandai" rel="noreferrer" target="_blank"><img src={githubLogo} alt="github icon" /></a>
                <a href="https://www.linkedin.com/in/camila-mandai" rel="noreferrer" target="_blank"><img src={linkedinLogo} alt="linkedin icon" /></a>
-               <a href="https://www.linkedin.com/in/camila-mandai" rel="noreferrer" target="_blank"><img src={resumeIcon} alt="linkedin icon" /></a>
+               {/* <a href="https://www.linkedin.com/in/camila-mandai" rel="noreferrer" target="_blank"><img src={resumeIcon} alt="linkedin icon" /></a> */}
             </div>
           </Col>
           <Col lg="6">

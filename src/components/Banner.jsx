@@ -42,7 +42,7 @@ export default function Banner() {
     <div className="banner" id="home">
       <Container>
         <Row className="align-items-center">
-          <Col className="banner-presentation" xs={12} md={7}>
+          <Col className="banner-presentation" xs={12} md={6}>
             <span className="tagline">Olá</span>
             <h1>Sou Camila Mandai <span className="wrap">{text}<span className="blinking-cursor">|</span></span></h1>
             <p>Este é o meu portifólio, fique à vontade para explorar o meu mundo</p>
