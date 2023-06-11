@@ -713,6 +713,13 @@ nav.navbar img {
   border-radius: 10px;
 }
 
+@media screen and (max-width:518px) {
+  .contact form button {
+    width: 98%;
+    margin: auto;
+  }
+}
+
 .contact form button:hover {
   background-color: #ffffff;
   color:rgb(170, 54, 124)
