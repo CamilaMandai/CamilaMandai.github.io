@@ -382,7 +382,7 @@ nav.navbar img {
     background: #151515;
     border-radius: 64px;
     text-align: left;
-    padding: 60px 80px 0 80px;
+    padding: 60px 80px 30px 80px;
     margin-top: -60px;
   }  
 }
@@ -472,15 +472,15 @@ nav.navbar img {
 
 /* Projects */
 .project {
-  padding: 80px 0;
+  padding: 40px 0;
   position: relative;
   background-color: black;
 }
 .project h2 {
-	font-size: 45px;
+	font-size: 2rem;
 	font-weight: 700;
   text-align: center;
-  color:#fff;
+  color:#eceaea;
 }
 .project p {
   color: #B8B8B8;
@@ -578,10 +578,11 @@ nav.navbar img {
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
-  padding: 10px;
+  padding-top: 10px;
 }
 .proj-txtx p a {
   font-weight: bold;
+  font-size: 15px;
   color: rgb(247, 243, 11);
 }
 
@@ -591,17 +592,20 @@ nav.navbar img {
   color: #fff;
 }
 .proj-txtx h4 {
-  font-size: 30px;
+  font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1.1em;
+  padding-top: 10px;
   margin-bottom: 1rem;
 }
 .proj-txtx span {
   font-style: italic;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 0.8rem;
   letter-spacing: 0.8px;
+  display: block;
+  padding: 0 20px;
 }
 .background-image-right {
   top: 20%;
@@ -616,16 +620,14 @@ nav.navbar img {
 .contact {
   /* background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%); */
   background: linear-gradient(90.21deg, rgb(83, 181, 154) -5.91%, rgb(49, 119, 177) 111.58%);
-  
-
-  padding: 60px 0 200px 0;
+  padding: 40px 0 80px 0;
   text-align: center;
 }
 
 .contact h2 {
 	font-size: 45px;
 	font-weight: 700;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .contact-email {
@@ -708,7 +710,6 @@ nav.navbar img {
   background-color: #2b2b2b;
   padding: 14px 48px;
   font-size: 18px;
-  margin-top: 25px;
   width: 30%;
   border-radius: 10px;
 }

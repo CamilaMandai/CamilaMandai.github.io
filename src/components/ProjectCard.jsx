@@ -9,7 +9,7 @@ export default function ProjectCard({title, description, imgUrl, githubLink}) {
         <div className="proj-txtx">
           <h4>{title}</h4>
           <span>{description}</span>
-          <p><a href={githubLink} target="blank">Repositório no Github</a></p>
+          <p><a href={githubLink} target="blank">Github</a></p>
         </div>
       </div>
     </Col>
