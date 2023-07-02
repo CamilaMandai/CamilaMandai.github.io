@@ -1,11 +1,11 @@
 {
+  "homepage": "https://CamilaMandai.github.io",
   "name": "portifolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "proxy": "http://localhost:5000",
   "scripts": {
-    "homepage": "https://CamilaMandai.github.io",
     "start": "vite --open",
     "dev": "vite",
     "build": "vite build",
