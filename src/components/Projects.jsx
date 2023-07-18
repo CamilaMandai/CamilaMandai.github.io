@@ -4,7 +4,8 @@ import ecommerce from '../assets/ecommerce.png';
 import todoapp from '../assets/todoapp.png';
 import tangara from '../assets/tangara.png';
 import itunes from '../assets/itunesClone.png';
-import deliveryApp from '../assets/deliveryApp.png'
+import deliveryApp from '../assets/deliveryApp.png';
+import recipesApp from '../assets/recipeApp.png';
 
 export default function Projects() {
   const projects = [
@@ -37,6 +38,12 @@ export default function Projects() {
       description: "Aplicativo de entrega de bebidas com tela de produtos, perfil de usuários e lista de compras. Desenvolvido em React,  Express e MySQL",
       imgUrl: deliveryApp,
       githubLink: 'https://github.com/CamilaMandai/delivery-app',
+    },
+    {
+      title:"Recipes App",
+      description: "Aplicativo de receitas vegetarianas e veganas. Desenvolvido em Vue com o pacote Pinia para gerenciamente de estados e dados da API Mealdb",
+      imgUrl: recipesApp,
+      githubLink: 'https://github.com/CamilaMandai/recipe-app-vue',
     },
   ]
   return (
